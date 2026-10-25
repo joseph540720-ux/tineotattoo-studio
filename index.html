@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tineo Tattoo Studio</title>
+<meta name="description" content="Estudio de tatuajes en Valdivia. Cómo cotizar, promociones, cuidados de tu tatuaje y opiniones.">
+<link rel="icon" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Jost:wght@400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}
+.extra[hidden]{display:none !important}
+
+body{margin:0;background:#F5EADD;font-family:'Jost',system-ui,sans-serif;color:#3B2219}
+a{color:#9B3A61}a:hover{color:#5A3A2C}
+input,textarea,select{font-family:'Jost',system-ui,sans-serif}
+.hd{padding:18px 48px}
+.hero{padding:56px 48px 72px}
+.sec{padding:88px 48px}
+.foot{padding:40px 48px}
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.span2{grid-column:span 2}
+.span3{grid-column:span 3}
+details.acc{background:#FBF5EC;border:1px solid #DCC7B3;border-radius:20px;overflow:hidden}
+details.acc.alt{background:#F5EADD}
+details.acc.dark{background:#3B2219;border-color:#3B2219}
+details.acc.dark>summary{color:#F5EADD}
+details.acc.dark>summary small{color:#E7C9B3}
+details.acc.dark>summary::after{color:#E7A2BB}
+details.acc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 28px;font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:600;color:#3B2219}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary::after{content:'+';font-family:'Jost',sans-serif;font-weight:300;font-size:30px;color:#9B3A61;line-height:1;flex:none}
+details.acc[open]>summary::after{content:'–'}
+details.acc>summary small{display:block;font-family:'Jost',sans-serif;font-size:14px;font-weight:400;color:#7A5C4B;margin-top:2px}
+details.acc>.accb{padding:4px 28px 28px;display:flex;flex-direction:column;gap:24px}
+@media (max-width:900px){.gal{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media (max-width:640px){
+.hd{padding:12px 20px}
+.hero{padding:32px 20px 48px}
+.sec{padding:56px 20px}
+.foot{padding:32px 20px}
+.nav{display:none !important}
+.span2,.span3{grid-column:span 6}
+}
+</style>
+
+</head>
+<body>
+
+<div style="background:#F5EADD;color:#3B2219;font-family:'Jost',system-ui,sans-serif;font-size:16px;line-height:1.55">
+
+<!-- Barra superior -->
+<div class="hd" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;border-bottom:1px solid #DCC7B3">
+<div style="display:flex;align-items:center;gap:12px">
+<img src="logo.png" alt="Logo de Tineo, dos hojas" style="width:40px;height:40px;border-radius:50%">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;letter-spacing:0.28em;font-weight:500;color:#5A3A2C">TINEO</span>
+</div>
+<nav class="nav" style="display:flex;flex-wrap:wrap;gap:8px 28px;font-size:14px;letter-spacing:0.04em">
+<a href="#disenos" style="color:#5A3A2C;text-decoration:none;border:1.5px solid #5A3A2C;border-radius:999px;padding:8px 18px;font-weight:500">Diseños disponibles</a>
+<a href="#cotizar" style="color:#5A3A2C;text-decoration:none">Cómo cotizar</a>
+<a href="#promociones" style="color:#5A3A2C;text-decoration:none">Promociones</a>
+<a href="#cuidados" style="color:#5A3A2C;text-decoration:none">Cuidados</a>
+<a href="#opiniones" style="color:#5A3A2C;text-decoration:none">Opiniones</a>
+<a href="#ubicacion" style="color:#5A3A2C;text-decoration:none">Ubicación</a>
+</nav>
+<a href="#formulario" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 24px;background:#5A3A2C;color:#F5EADD;text-decoration:none;font-weight:500;font-size:14px;letter-spacing:0.06em;border-radius:999px">Cotizar</a>
+</div>
+
+<!-- Inicio -->
+<section class="hero" style="display:flex;flex-wrap:wrap;align-items:center;gap:40px 56px">
+<div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:24px">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#9B3A61;font-weight:500">Estudio de tatuajes · Valdivia</span>
+<h1 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(44px,6.2vw,84px);line-height:0.98;color:#3B2219">Tatuajes que crecen contigo</h1>
+<p style="margin:0;max-width:480px;font-size:18px;color:#5A3A2C">Aquí te explicamos cómo cotizar paso a paso y cómo cuidar tu tatuaje para que cicatrice bien.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<a href="#cotizar" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;background:#E7A2BB;color:#3B2219;text-decoration:none;font-weight:600;border-radius:999px">Cómo cotizar</a>
+<a href="#disenos" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;background:#5A3A2C;color:#F5EADD;text-decoration:none;font-weight:500;border-radius:999px">Diseños disponibles</a>
+<a href="#cuidados" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;border:1.5px solid #5A3A2C;color:#5A3A2C;text-decoration:none;font-weight:500;border-radius:999px">Cuidar mi tatuaje</a>
+</div>
+<a href="#opiniones" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;text-decoration:none;color:#5A3A2C;font-size:15px">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;line-height:1;font-weight:600;color:#3B2219">5,0</span>
+<span style="color:#9B3A61;font-size:18px;letter-spacing:0.1em" aria-label="5 estrellas">★★★★★</span>
+<span>+72 opiniones en Google</span>
+</a>
+</div>
+<div style="flex:1 1 360px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+<div style="grid-row:1 / span 2;position:relative;border-radius:20px;overflow:hidden;background:#EBD9C6;min-height:260px">
+<img src="mariposas.jpg" alt="Tatuaje de dos mariposas rojas con destellos en el hombro" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+</div>
+<div style="position:relative;border-radius:20px;overflow:hidden;background:#EBD9C6;aspect-ratio:1/1">
+<img src="tortuga.jpg" alt="Tatuaje de una tortuga marina en el brazo" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+</div>
+<div style="position:relative;border-radius:20px;overflow:hidden;background:#EBD9C6;aspect-ratio:1/1">
+<img src="perritos.jpg" alt="Tatuaje de dos perritos pequeños en el brazo" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+</div>
+</div>
+</section>
+
+<!-- Cómo cotizar -->
+<section id="cotizar" class="sec" style="background:#FBF5EC">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+
+<div style="display:flex;flex-direction:column;gap:14px;max-width:720px">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#9B3A61;font-weight:500">Cómo cotizar</span>
+<h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.05">Cotizar tu tatuaje en 5 pasos</h2>
+<p style="margin:0;font-size:17px;color:#4A2E22">La cotización se hace por mensaje en Instagram. Mientras más claros sean tus datos, más rápido y más exacto es el valor que recibes.</p>
+</div>
+
+<details class="acc" id="pasos">
+<summary><span>Ver los 5 pasos y armar mi mensaje<small>Pasos, datos a enviar, agenda y formulario</small></span></summary>
+<div class="accb" style="gap:40px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:24px">
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:40px;line-height:1;font-weight:500;color:#9B3A61">1</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;font-weight:600;line-height:1.1">Elige tu idea</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">Escoge un diseño disponible o cuéntanos una idea propia. Si tienes referencias, guárdalas como imagen.</p>
+</div>
+
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:40px;line-height:1;font-weight:500;color:#9B3A61">2</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;font-weight:600;line-height:1.1">Reúne los datos</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">Nombre, idea, zona del cuerpo, tamaño en cm, color y los días en que puedes venir. Ten a mano tus referencias y una foto de la zona.</p>
+</div>
+
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:40px;line-height:1;font-weight:500;color:#9B3A61">3</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;font-weight:600;line-height:1.1">Escribe por Instagram</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">Usa el formulario de abajo para armar el mensaje y envíalo al chat de @tineotattoo junto con tus referencias y la foto de la zona.</p>
+</div>
+
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:40px;line-height:1;font-weight:500;color:#9B3A61">4</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;font-weight:600;line-height:1.1">Recibe valor y fecha</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">El tatuador revisa tu idea y te responde con el valor y las fechas disponibles. Puede proponerte ajustes al diseño.</p>
+</div>
+
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:40px;line-height:1;font-weight:500;color:#9B3A61">5</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;font-weight:600;line-height:1.1">Agenda con $10.000</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">Cuando aceptas el valor y la fecha, abonas $10.000 para agendar tu hora. Aceptamos todos los medios de pago. Revisa las condiciones de la agenda más abajo.</p>
+</div>
+
+</div>
+
+<details class="acc">
+<summary><span>Qué datos enviar<small>Para que podamos cotizarte más rápido</small></span></summary>
+<div class="accb">
+<ul style="margin:0;padding-left:20px;display:block;columns:2 320px;column-gap:56px;font-size:16px;color:#4A2E22">
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Nombre.</strong> Tu nombre y apellido.</li>
+
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Idea.</strong> Qué quieres tatuarte y, si quieres, qué significa para ti.</li>
+
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Zona del cuerpo.</strong> Dónde lo quieres.</li>
+
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Tamaño.</strong> Alto y ancho aproximados en centímetros.</li>
+
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Color.</strong> Negro y gris, o a color. El color tiene un valor adicional.</li>
+
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Disponibilidad.</strong> Los días y horarios en que puedes venir.</li>
+
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Referencias (las adjuntas en el chat).</strong> Una o dos imágenes de estilo o de tatuajes que te gusten. No hace falta que sean idénticos.</li>
+
+
+<li style="margin-bottom:12px;break-inside:avoid"><strong style="font-weight:600;color:#3B2219">Foto de la zona (la adjuntas en el chat).</strong> Si el diseño va sobre otro tatuaje o una cicatriz, envía una foto para evaluarlo.</li>
+
+</ul>
+</div>
+</details>
+
+<details class="acc alt" id="agenda">
+<summary><span>Condiciones de la agenda<small>Abono, cambios, espera y qué llevar</small></span></summary>
+<div class="accb">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px">
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-weight:600;font-size:15px">Abono previo</span>
+<span style="font-size:15px;color:#7A5C4B">Para agendar tu hora debes abonar $10.000 antes de la sesión.</span>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-weight:600;font-size:15px">Abono no reembolsable</span>
+<span style="font-size:15px;color:#7A5C4B">Si cancelas tu sesión, el abono no se reembolsa.</span>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-weight:600;font-size:15px">Límite de espera</span>
+<span style="font-size:15px;color:#7A5C4B">Tenemos 30 minutos de espera. Pasado ese tiempo pierdes la sesión y tu abono.</span>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-weight:600;font-size:15px">Cambio de fecha</span>
+<span style="font-size:15px;color:#7A5C4B">Puedes cambiar tu sesión hasta con 24 horas de anticipación.</span>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-weight:600;font-size:15px">Acompañante</span>
+<span style="font-size:15px;color:#7A5C4B">Se permite solo un acompañante.</span>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-weight:600;font-size:15px">Menores de edad</span>
+<span style="font-size:15px;color:#7A5C4B">Si eres menor de edad, debes venir con tu tutor legal para firmar un consentimiento en el estudio.</span>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-weight:600;font-size:15px">Ropa cómoda</span>
+<span style="font-size:15px;color:#7A5C4B">Ven con ropa cómoda. Según la zona que te vas a tatuar, debe dejar la piel fácil de descubrir.</span>
+</div>
+
+</div>
+</div>
+</details>
+
+<div id="formulario" style="display:flex;flex-wrap:wrap;gap:40px 48px">
+<div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px">
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(30px,3.6vw,42px);font-weight:500;line-height:1.1">Arma tu mensaje</h3>
+<p style="margin:0;max-width:44ch;color:#4A2E22">Completa los datos, copia el mensaje y pégalo en el chat de Instagram. Adjunta ahí tus referencias y la foto de la zona, y te respondemos con valor y fecha.</p>
+</div>
+<form id="cotiza" style="flex:1.3 1 400px;min-width:0;display:flex;flex-direction:column;gap:18px;background:#F5EADD;border:1px solid #DCC7B3;border-radius:24px;padding:28px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-nombre" style="font-size:14px;font-weight:500">Nombre</label>
+<input id="f-nombre" type="text" value="" placeholder="Nombre y apellido" style="min-height:48px;box-sizing:border-box;border:1px solid #C9B09B;border-radius:12px;padding:0 14px;font-size:16px;background:#fff;color:#3B2219;width:100%">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-idea" style="font-size:14px;font-weight:500">Idea</label>
+<textarea id="f-idea" rows="3" placeholder="Ej: medusa fine line, o un diseño de la galería" style="box-sizing:border-box;border:1px solid #C9B09B;border-radius:12px;padding:12px 14px;font-size:16px;background:#fff;color:#3B2219;width:100%;resize:vertical"></textarea>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:16px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-zona" style="font-size:14px;font-weight:500">Zona del cuerpo</label>
+<input id="f-zona" type="text" value="" placeholder="Ej: antebrazo" style="min-height:48px;box-sizing:border-box;border:1px solid #C9B09B;border-radius:12px;padding:0 14px;font-size:16px;background:#fff;color:#3B2219;width:100%">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-tam" style="font-size:14px;font-weight:500">Tamaño</label>
+<input id="f-tam" type="text" value="" placeholder="Ej: 5 cm" style="min-height:48px;box-sizing:border-box;border:1px solid #C9B09B;border-radius:12px;padding:0 14px;font-size:16px;background:#fff;color:#3B2219;width:100%">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-color" style="font-size:14px;font-weight:500">Color</label>
+<select id="f-color" style="min-height:48px;box-sizing:border-box;border:1px solid #C9B09B;border-radius:12px;padding:0 10px;font-size:16px;background:#fff;color:#3B2219;width:100%">
+<option value="Negro y gris">Negro y gris</option>
+<option value="Color">Color</option>
+</select>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-disp" style="font-size:14px;font-weight:500">Disponibilidad</label>
+<input id="f-disp" type="text" value="" placeholder="Ej: martes y jueves en la tarde" style="min-height:48px;box-sizing:border-box;border:1px solid #C9B09B;border-radius:12px;padding:0 14px;font-size:16px;background:#fff;color:#3B2219;width:100%">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<span style="font-size:14px;font-weight:500">Mensaje para Instagram</span>
+<div style="background:#FBF5EC;border:1px dashed #A8856E;border-radius:12px;padding:14px;font-size:15px;white-space:pre-line;color:#4A2E22" id="mensaje">Hola Tineo, quiero cotizar un tatuaje.
+Nombre: [tu nombre]
+Idea: [tu idea]
+Zona: [zona]
+Tamaño: [tamaño]
+Color: Negro y gris
+Disponibilidad: [días y horarios]
+(Adjunto referencias y foto de la zona)</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<button type="button" id="copiar" style="min-height:48px;padding:0 24px;border:none;border-radius:999px;background:#E7A2BB;color:#3B2219;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer">Copiar mensaje</button>
+<a href="https://ig.me/m/tineotattoo" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;background:#5A3A2C;color:#F5EADD;text-decoration:none;font-size:15px;font-weight:500">Abrir chat de Instagram</a>
+</div>
+</form>
+</div>
+</div>
+</details>
+
+</div>
+</section>
+
+<!-- Promociones -->
+<section id="promociones" class="sec" style="background:#EBD9C6">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#9B3A61;font-weight:500">Promociones</span>
+<h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.05">Tatúate en Tineo</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+<div style="background:#FBF5EC;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
+<span style="font-size:15px;letter-spacing:0.12em;text-transform:uppercase;color:#5A3A2C">2 tatuajes de hasta 5 cm</span>
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:72px;line-height:1;font-weight:500;color:#3B2219">$40.000</span>
+<span style="font-size:15px;color:#5A3A2C">En color, $10.000 extra.</span>
+</div>
+<div style="background:#E7A2BB;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<span style="font-size:15px;letter-spacing:0.12em;text-transform:uppercase">4 tatuajes de hasta 5 cm</span>
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:72px;line-height:1;font-weight:500">$60.000</span>
+<span style="font-size:15px">Se puede compartir entre dos personas, con $10.000 extra.</span>
+</div>
+</div>
+<p style="margin:0;font-size:15px;color:#5A3A2C">Cotiza por mensaje a @tineotattoo. Valores del flyer vigente.</p>
+</div>
+</section>
+
+<!-- Cuidados -->
+<section id="cuidados" class="sec" style="background:#F5EADD">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+
+<div style="display:flex;flex-direction:column;gap:14px;max-width:720px">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#9B3A61;font-weight:500">Cuidados</span>
+<h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.05">Cómo cuidar tu tatuaje</h2>
+<p style="margin:0;font-size:17px;color:#4A2E22">Un tatuaje nuevo es una herida que cicatriza. La piel superficial tarda entre 2 y 4 semanas y las capas profundas un poco más. Esta es la secuencia que recomiendan las guías de salud.</p>
+</div>
+
+<details class="acc" id="cuidar">
+<summary><span>Ver cómo cuidar mi tatuaje<small>Las primeras 4 semanas, qué hacer y qué evitar</small></span></summary>
+<div class="accb" style="gap:36px">
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:600">Paso a paso: las primeras 4 semanas</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:28px">
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#9B3A61;font-weight:500">Primeras 48 horas</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:600;line-height:1.1">Protege y limpia</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">Deja la protección que te puso el tatuador el tiempo que te indique. Según las guías, puede ser de unas horas a 2 días. Luego lávate las manos y limpia con agua tibia y jabón suave sin fragancia. Seca a toques con papel limpio.</p>
+</div>
+
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#9B3A61;font-weight:500">Semana 1</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:600;line-height:1.1">Hidrata con poco</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">Aplica una capa fina del producto que te recomiende tu tatuador. Es normal que haya enrojecimiento e hinchazón leves y que se forme una costra fina. Deja que la piel respire.</p>
+</div>
+
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#9B3A61;font-weight:500">Semana 2</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:600;line-height:1.1">Picazón y descamación</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">La piel se descama y pica. No rasques ni arranques las costras: se caen solas. Si pica mucho, hidrata o golpea suavemente la zona.</p>
+</div>
+
+
+<div style="border-top:2px solid #5A3A2C;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+<span style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#9B3A61;font-weight:500">Semanas 3 y 4</span>
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:600;line-height:1.1">Cicatrización</h3>
+<p style="margin:0;font-size:15px;color:#4A2E22">La capa superficial suele cicatrizar en 2 a 4 semanas. Sigue hidratando y, cuando ya esté cicatrizado, protégelo del sol con protector solar de factor 30 o más.</p>
+</div>
+
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:24px">
+<div style="background:#F5EADD;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px">
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:600">Qué hacer</h3>
+<ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;color:#4A2E22">
+
+<li>Lavarte las manos antes de tocar el tatuaje.</li>
+
+
+<li>Limpiar con agua tibia y jabón suave sin fragancia.</li>
+
+
+<li>Secar a toques con papel limpio, sin frotar.</li>
+
+
+<li>Usar una capa fina de crema, sin exceso. La piel necesita aire.</li>
+
+
+<li>Ducharte con normalidad, sin dejar que el agua golpee fuerte.</li>
+
+</ul>
+</div>
+<div style="background:#F5EADD;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px">
+<h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:600">Qué evitar</h3>
+<ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;color:#4A2E22">
+
+<li>Rascar o arrancar las costras.</li>
+
+
+<li>Mar, piscina, tina o sauna hasta que esté cicatrizado.</li>
+
+
+<li>Sol directo y camas solares mientras sana.</li>
+
+
+<li>Jabones perfumados, alcohol y productos fuertes.</li>
+
+
+<li>Contacto con animales y tierra, como la jardinería, hasta que cicatrice.</li>
+
+</ul>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#5A3A2C;max-width:80ch">
+<p style="margin:0">Estas guías no son iguales en todos los lugares: un estudio con 700 instrucciones de cuidado de tatuajes encontró que varían mucho entre estudios y que muchas no dicen cuándo consultar a un médico. Por eso, si tu tatuador te da otra indicación, sigue la suya.</p>
+<p style="margin:0">Fuentes: <a href="https://emd.saccounty.gov/us/en/environmental-health/body-art/recommended-tattoo-aftercare.html">Sacramento County Environmental Management</a>, <a href="https://www.medicalnewstoday.com/articles/319980.php">Medical News Today</a>, <a href="https://www.infobae.com/america/the-new-york-times/2024/09/04/como-debes-cuidar-ese-tatuaje-que-te-acabas-de-hacer/">The New York Times vía Infobae</a> y <a href="https://karger.com/drm/article/239/6/988/861717/An-An-Analysis-of-the-Content-and-Recommendations-of">Liszewski y cols., Dermatology 2023</a>.</p>
+</div>
+</div>
+</details>
+
+<details class="acc dark" id="ayuda">
+<summary><span>Cuándo pedir ayuda<small>Señales de infección o alergia</small></span></summary>
+<div class="accb">
+<p style="margin:0;font-size:15px;color:#E7C9B3">Escríbenos a @tineotattoo y consulta con un médico si notas alguna de estas señales de infección o alergia:</p>
+<ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px;color:#F5EADD">
+
+<li>Enrojecimiento intenso, hinchazón o dolor que aumentan con los días.</li>
+
+
+<li>Pus amarillo o verde, o mal olor.</li>
+
+
+<li>Fiebre.</li>
+
+
+<li>Líneas rojas que salen desde el tatuaje.</li>
+
+
+<li>Sarpullido elevado y doloroso sobre o alrededor del tatuaje.</li>
+
+</ul>
+</div>
+</details>
+
+</div>
+</section>
+
+<!-- Opiniones -->
+<section id="opiniones" class="sec" style="background:#3B2219;color:#F5EADD">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#E7A2BB;font-weight:500">Opiniones en Google</span>
+<h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.05;color:#F5EADD">Lo que dicen quienes se tatuaron</h2>
+</div>
+<div style="display:flex;align-items:center;gap:16px">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:60px;line-height:1;font-weight:600;color:#F5EADD">5,0</span>
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="color:#E7A2BB;font-size:20px;letter-spacing:0.12em" aria-label="5 estrellas">★★★★★</span>
+<span style="font-size:14px;color:#E7C9B3">+72 opiniones de 5 estrellas</span>
+</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px">
+
+<div class="span2" style="background:#4A2E22;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<span style="color:#E7A2BB;font-size:16px;letter-spacing:0.12em">★★★★★</span>
+<p style="margin:0;font-size:16px;color:#F5EADD">Feliz con mi tatuaje, entrega total a su trabajo. Amable y de confianza, 0 incomodidad. Su trabajo es impecable y detallista. El mejor tatuador de Valdivia.</p>
+<span style="font-size:13px;color:#E7C9B3">Kathina Riquelme · hace un año</span>
+</div>
+
+
+<div class="span2" style="background:#4A2E22;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<span style="color:#E7A2BB;font-size:16px;letter-spacing:0.12em">★★★★★</span>
+<p style="margin:0;font-size:16px;color:#F5EADD">Realiza un trabajo muy bacán, es detallista, personaliza tu idea logrando plasmar un diseño único, transmite confianza desde el primer momento. Full recomendado!</p>
+<span style="font-size:13px;color:#E7C9B3">Yannira Muñoz Hermosilla · hace 9 meses</span>
+</div>
+
+
+<div class="span2" style="background:#4A2E22;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<span style="color:#E7A2BB;font-size:16px;letter-spacing:0.12em">★★★★★</span>
+<p style="margin:0;font-size:16px;color:#F5EADD">Desde el primer momento en que se llega se siente bien, te ofrecen un café exquisito para el frío. Por lejos el mejor lugar al que he ido, definitivamente se vuelve.</p>
+<span style="font-size:13px;color:#E7C9B3">María Casanga · hace un año</span>
+</div>
+
+
+<div class="span3" style="background:#4A2E22;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<span style="color:#E7A2BB;font-size:16px;letter-spacing:0.12em">★★★★★</span>
+<p style="margin:0;font-size:16px;color:#F5EADD">La experiencia muy buena! Excelente disposición, amabilidad, buen trato, me guió para conseguir lo que quería y un trabajo muy limpio. El mejor de Valdivia.</p>
+<span style="font-size:13px;color:#E7C9B3">Constanza Cifuentes · hace 11 meses</span>
+</div>
+
+
+<div class="span3" style="background:#4A2E22;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<span style="color:#E7A2BB;font-size:16px;letter-spacing:0.12em">★★★★★</span>
+<p style="margin:0;font-size:16px;color:#F5EADD">Super buen servicio, el tatuaje quedó tal cual como lo pedí, con muy buena higiene, todo esterilizado, super recomendado.</p>
+<span style="font-size:13px;color:#E7C9B3">Octavio Escobar · hace un año</span>
+</div>
+
+</div>
+<a href="https://maps.app.goo.gl/ia6MdcHeR1cgGRcD8?g_st=ic" style="align-self:flex-start;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;border:1.5px solid #F5EADD;color:#F5EADD;text-decoration:none;font-weight:500;font-size:15px">Ver en Google Maps</a>
+</div>
+</section>
+
+<!-- Diseños disponibles -->
+<section id="disenos" class="sec" style="background:#FBF5EC">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#9B3A61;font-weight:500">Diseños disponibles</span>
+<h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.05">Elige uno y cotízalo</h2>
+</div>
+<p style="margin:0;max-width:40ch;font-size:15px;color:#5A3A2C">Diseños listos para tatuar, ajustables a tu piel y tu tamaño. Cotiza el que más te guste.</p>
+</div>
+<div class="gal">
+
+<div style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 1</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 2</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 3</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 4</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 5</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 6</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 7</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+<button type="button" id="toggle-mas" aria-expanded="false" style="aspect-ratio:4/5;max-width:100%;box-sizing:border-box;border:none;border-radius:16px;background:#E7A2BB;color:#3B2219;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:8px;padding:24px;text-align:left;font-family:inherit">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;line-height:1.05;font-weight:500">Ver más diseños</span>
+<span style="font-size:15px;font-weight:600">Mostrar el resto</span>
+</button>
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 8</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 9</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 10</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 11</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 12</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 13</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 14</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+
+<div class="extra" hidden style="display:flex;flex-direction:column;gap:10px;color:#3B2219">
+<div style="aspect-ratio:4/5;max-width:100%;border:1.5px dashed #A8856E;border-radius:16px;background:#F5EADD;display:flex;align-items:center;justify-content:center;color:#7A5C4B;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:12px;box-sizing:border-box">Foto del diseño 15</div>
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span>Nombre del diseño</span><span style="color:#7A5C4B">$ precio</span></div>
+</div>
+
+</div>
+<p style="margin:0;font-size:15px;color:#4A2E22">¿No ves lo que buscas? <a href="#formulario" style="color:#9B3A61;font-weight:500">Cotiza tu propia idea</a>.</p>
+</div>
+</section>
+
+<!-- Historia -->
+<section id="historia" class="sec" style="background:#EBD9C6">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:40px 64px">
+<div style="flex:0 1 340px;min-width:0;width:100%;max-width:100%;position:relative;aspect-ratio:3/4;border-radius:20px;overflow:hidden;background:#DCC7B3">
+<video src="estudio.mp4" poster="estudio.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Recorrido por la sala de tatuajes de Tineo, con el carro rosado, la camilla negra y la luz de aro" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+</div>
+<div style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:18px;font-size:17px;color:#4A2E22;max-width:60ch">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#9B3A61;font-weight:500">La historia de Tineo</span>
+<h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.05;color:#3B2219">Un brote que se volvió estudio</h2>
+<p style="margin:0">[Texto de ejemplo] Tineo nació en Valdivia con una idea simple: que tatuarse sea una experiencia cuidada de principio a fin, desde la primera conversación hasta la cicatrización.</p>
+<p style="margin:0">[Texto de ejemplo] Las hojas del logo hablan de algo que empieza pequeño y se transforma con el tiempo. Así pensamos cada pieza, con el cliente y para su piel.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;padding-top:6px">
+<a href="https://www.instagram.com/neotattsvaldivia" style="padding:8px 16px;border:1px solid #5A3A2C;border-radius:999px;font-size:14px;color:#5A3A2C;text-decoration:none">@neotattsvaldivia</a>
+<a href="https://www.instagram.com/mart.tattoos_" style="padding:8px 16px;border:1px solid #5A3A2C;border-radius:999px;font-size:14px;color:#5A3A2C;text-decoration:none">@mart.tattoos_</a>
+<a href="https://www.instagram.com/mauroandaurtattoo" style="padding:8px 16px;border:1px solid #5A3A2C;border-radius:999px;font-size:14px;color:#5A3A2C;text-decoration:none">@mauroandaurtattoo</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Ubicación -->
+<section id="ubicacion" class="sec" style="background:#F5EADD">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px">
+<span style="font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#9B3A61;font-weight:500">Ubicación</span>
+<h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,6vw,76px);line-height:1;color:#3B2219">Arauco 340, oficina 402</h2>
+<p style="margin:0;font-size:20px;color:#4A2E22">Valdivia, Región de Los Ríos. Atendemos con hora agendada: escríbenos por Instagram para reservar.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;padding-top:8px">
+<a href="https://maps.app.goo.gl/ia6MdcHeR1cgGRcD8?g_st=ic" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;background:#5A3A2C;color:#F5EADD;text-decoration:none;font-weight:500;font-size:15px">Abrir en Google Maps</a>
+<a href="https://www.instagram.com/tineotattoo" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;border:1.5px solid #5A3A2C;color:#5A3A2C;text-decoration:none;font-weight:500;font-size:15px">@tineotattoo</a>
+</div>
+</div>
+</section>
+
+<!-- Pie -->
+<footer class="foot" style="background:#3B2219;color:#F5EADD;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px">
+<div style="display:flex;align-items:center;gap:12px">
+<img src="logo.png" alt="" style="width:34px;height:34px;border-radius:50%">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;letter-spacing:0.28em">TINEO TATTOO STUDIO</span>
+</div>
+<span style="font-size:14px;color:#E7C9B3">Arauco 340, of. 402, Valdivia · @tineotattoo</span>
+</footer>
+
+</div>
+
+<script>
+(function(){
+var s={nombre:'',idea:'',zona:'',tam:'',disp:'',color:'Negro y gris'};
+function msg(){return 'Hola Tineo, quiero cotizar un tatuaje.\n'+'Nombre: '+(s.nombre||'[tu nombre]')+'\n'+'Idea: '+(s.idea||'[tu idea]')+'\n'+'Zona: '+(s.zona||'[zona]')+'\n'+'Tamaño: '+(s.tam||'[tamaño]')+'\n'+'Color: '+s.color+'\n'+'Disponibilidad: '+(s.disp||'[días y horarios]')+'\n'+'(Adjunto referencias y foto de la zona)';}
+var out=document.getElementById('mensaje');
+function render(){out.textContent=msg();}
+[['nombre','f-nombre'],['idea','f-idea'],['zona','f-zona'],['tam','f-tam'],['disp','f-disp']].forEach(function(p){document.getElementById(p[1]).addEventListener('input',function(e){s[p[0]]=e.target.value;render();});});
+document.getElementById('f-color').addEventListener('change',function(e){s.color=e.target.value;render();});
+document.getElementById('cotiza').addEventListener('submit',function(e){e.preventDefault();});
+var btn=document.getElementById('copiar');
+btn.addEventListener('click',function(){
+  var t=msg();
+  function ok(){btn.textContent='Mensaje copiado';}
+  function fallback(){var r=document.createRange();r.selectNodeContents(out);var sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);try{if(document.execCommand('copy'))ok();}catch(e){}}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fallback);}else{fallback();}
+});
+var tg=document.getElementById('toggle-mas');var open=false;
+tg.addEventListener('click',function(){
+  open=!open;
+  document.querySelectorAll('.extra').forEach(function(el){el.hidden=!open;});
+  var sp=tg.querySelectorAll('span');
+  sp[0].textContent=open?'Ver menos':'Ver más diseños';
+  sp[1].textContent=open?'Ocultar el resto':'Mostrar el resto';
+  tg.setAttribute('aria-expanded',String(open));
+});
+function openHash(){var h=location.hash.slice(1);if(!h)return;var el=document.getElementById(h);if(!el)return;var d=el.closest('details');if(el.tagName==='DETAILS')el.open=true;while(d){d.open=true;d=d.parentElement&&d.parentElement.closest('details');}
+  if(h==='cotizar'||h==='cuidados'){var x=el.querySelector('details.acc');if(x)x.open=true;}}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(a){var id=a.getAttribute('href').slice(1);var t=document.getElementById(id);if(t){history.replaceState(null,'','#'+id);openHash();setTimeout(function(){t.scrollIntoView({behavior:'smooth'});},50);e.preventDefault();}}});
+window.addEventListener('hashchange',openHash);openHash();
+})();</script>
+</body>
+</html>
